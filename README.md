@@ -1,7 +1,9 @@
 # unicomp-pc122-3270
 Reconfigure a Unicomp PC-122 keyboard for use with 3270 terminal emulators
 
-## PC-122-3270 Keyboard Keymap
+Instructions for flashing the Unicomp PC-122 keyboard with custom Vial firmware available [here](https://sharktastica.co.uk/guides/unicomp_pico)
+
+## Keymap
 | **Keycap** | **Full Name**    | **PC Keymapping**         | **Description**                                                                                                                          | **x3270** | **pw3270** | **Notes**                                                                                                                                                                                                    |
 | ---------- | ---------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Attn       | Attention        | Lshift + ESC              | The operation in process is interrupted. This key works only when B appears in the operator<br>information area.                         | Yes       | Yes        |                                                                                                                                                                                                              |
