@@ -3,6 +3,8 @@ Reconfigure a Unicomp PC-122 keyboard for use with 3270 terminal emulators
 
 Instructions for flashing the Unicomp PC-122 keyboard with custom Vial firmware available [here](https://sharktastica.co.uk/guides/unicomp_pico)
 
+Default x3270 keymap [here](x3270_defaults.md)
+
 ## Keymap
 | **Keycap** | **Full Name**    | **PC Keymapping**         | **Description**                                                                                                                          | **x3270** | **pw3270** | **Notes**                                                                                                                                                                                                    |
 | ---------- | ---------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
