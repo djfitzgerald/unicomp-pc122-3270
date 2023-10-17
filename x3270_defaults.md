@@ -1,4 +1,4 @@
-# x3270 Default Keymappings
+# x3270 Default Key Bindings
 These are the default key bindings used by the x3270 emulator
 
 | **Event**                    | **Keymap:Line** | **Actions**                                                         |
