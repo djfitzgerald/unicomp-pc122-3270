@@ -29,8 +29,11 @@ x3270.oversize: 132x45
 ! Use the 'pc3270' keymap, defined below
 x3270.keymap: pc3270
 
-! Definition of the 'pc3270' keymap
-! How to write a keymap: https://x3270.miraheze.org/wiki/X3270/Keymap
+! Definition of the 'pc3270' keymap, defined at:
+!   https://github.com/djfitzgerald/unicomp-pc122-3270
+!
+! Instructions on how to write an x3270 keymap:
+!   https://x3270.miraheze.org/wiki/X3270/Keymap
 x3270.keymap.pc3270: #override \
     Shift<Key>Escape: Attn()\n\
     Alt Shift<Key>Escape: SysReq()\n\
