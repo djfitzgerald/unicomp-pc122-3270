@@ -5,6 +5,8 @@ Instructions for flashing the Unicomp PC-122 keyboard with custom Vial firmware 
 
 Default x3270 key bindings [here](x3270_defaults.md)
 
+![Unicomp PC-122 keyboard with 3270 keycap set](images/keyboard.jpg?raw=true "Unicomp PC-122 keyboard with 3270 keycap set")
+
 ## Keymap
 | **Keycap** | **Full Name**    | **PC Keymapping**         | **Description**                                                                                                                          | **x3270** | **pw3270** | **Notes**                                                                                                                                                                                                    |
 | ---------- | ---------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
