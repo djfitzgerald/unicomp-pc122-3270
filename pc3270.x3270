@@ -1,54 +1,57 @@
-! pc3270.x3270
-!   Sample x3270 session file
-!
-! Author: Dan FitzGerald, 8/2024
-!
-! Purpose:
-!   To illustrate the use of an x3270 session file to set x3270 settings for
-!   a particular host connection.  This includes a key mapping for my custom
-!   "pc3270" 122-key 3270 emulator keyboard.  Full information on my pc3270
-!   keyboard can be found at https://github.com/djfitzgerald/unicomp-pc122-3270
-!
+    ! pc3270.x3270
+    !   Sample x3270 session file
+    !
+    ! Author: Dan FitzGerald, 8/2024
+    !
+    ! Purpose:
+    !   To illustrate the use of an x3270 session file to set x3270 settings for
+    !   a particular host connection.  This includes a key mapping for my custom
+    !   "pc3270" 122-key 3270 emulator keyboard.  Full information on my pc3270
+    !   keyboard can be found at https://github.com/djfitzgerald/unicomp-pc122-3270
+    !
 
-! Tracing
-x3270.trace: false
+    ! Tracing
+    x3270.trace: false
 
-! IBM Z server information
-! In this example, we are connecting to SDF's public access VM/SP 5 system
-x3270.title: SDFVM
-x3270.hostname: L:planet.sdf.org:24
-x3270.verifyHostCert: false
+    ! IBM Z server information
+    ! In this example, we are connecting to SDF's public access VM/SP 5 system
+    x3270.title: SDFVM
+    x3270.hostname: planet.sdf.org:24
+    x3270.verifyHostCert: false
 
-! emulator font  (-efont)
-x3270.emulatorFont: 3270-20
+    ! emulator font  (-efont)
+    x3270.emulatorFont: 3270-20
 
-! 3270 model type and size
-x3270.model: 5
-x3270.oversize: 132x45
+    ! 3270 model type and size
+    x3270.model: 5
+    x3270.oversize: 132x45
 
-! Use the 'pc3270' keymap, defined below
-x3270.keymap: pc3270
+    ! Use the 'pc3270' keymap, defined below
+    x3270.keymap: pc3270
 
-! Definition of the 'pc3270' keymap, defined at:
-!   https://github.com/djfitzgerald/unicomp-pc122-3270
-!
-! Instructions on how to write an x3270 keymap:
-!   https://x3270.miraheze.org/wiki/X3270/Keymap
-x3270.keymap.pc3270: #override \
-    Shift<Key>Escape: Attn()\n\
-    Alt Shift<Key>Escape: SysReq()\n\
-    Alt<Key>c: Clear()\n\
-    Alt<Key>Pause: EraseInput()\n\
-    Shift Ctrl <Key>F5: EraseEOF()\n\
-    <Key>Control_L: Reset()\n\
-    <Key>Insert: ToggleInsert()\n\
-    <Key>BackSpace: BackSpace()\n\
-    <Key>Return: Newline()\n\
-    <Key>Control_R: Enter()\n\
-    <Key>End: FieldEnd()\n\
-    Alt<Key>1: PA(1)\n\
-    <Key>Prior: PA(2)\n\
-    Alt<Key>Next: PA(3)\n\
-    Alt<Key>Delete: DeleteWord()\n\
-    <Key>KP_Add: Tab()\n\
-    Shift<Key>Tab: BackTab()\n
+    ! Definition of the 'pc3270' keymap, defined at:
+    !   https://github.com/djfitzgerald/unicomp-pc122-3270
+    !
+    ! Instructions on how to write an x3270 keymap:
+    !   https://x3270.miraheze.org/wiki/X3270/Keymap
+    x3270.keymap.pc3270: #override \
+        Shift<Key>Escape: Attn()\n\
+        Alt Shift<Key>Escape: SysReq()\n\
+        Alt<Key>c: Clear()\n\
+        Alt<Key>Pause: EraseInput()\n\
+        Shift Ctrl <Key>F5: EraseEOF()\n\
+        Shift<Key>Tab: Tab()\n\
+        <Key>Control_L: Reset()\n\
+        <Key>Insert: ToggleInsert()\n\
+        <Key>BackSpace: BackSpace()\n\
+        <Key>Return: Newline()\n\
+        <Key>Control_R: Enter()\n\
+        Alt<Key>1: PA(1)\n\
+        Shift Alt<Key>1: Dup()\n\
+        <Key>Prior: PA(2)\n\
+        Alt<Key>Next: PA(3)\n\
+        <Key>End: BackTab()\n\
+        Alt<Key>Delete: DeleteWord()\n\
+        <Key>KP_Add: Tab()\n\
+        <Key>Home: Toggle(crosshair)\n\
+        Alt<Key>Home: Home()\n
